@@ -1,0 +1,100 @@
+{
+  "skill_name": "english-learner",
+  "iteration": 1,
+  "configurations": [
+    {
+      "name": "with_skill",
+      "display_name": "With english-learner Skill",
+      "pass_rate": {"mean": 0.83, "stddev": 0.24},
+      "duration_seconds": {"mean": 183.5, "stddev": 52.3},
+      "total_tokens": {"mean": 25540, "stddev": 4537}
+    },
+    {
+      "name": "without_skill",
+      "display_name": "Without Skill (Baseline)",
+      "pass_rate": {"mean": 1.0, "stddev": 0.0},
+      "duration_seconds": {"mean": 68.9, "stddev": 31.1},
+      "total_tokens": {"mean": 17652, "stddev": 2348}
+    }
+  ],
+  "evals": [
+    {
+      "eval_name": "meeting-preparation",
+      "eval_id": 1,
+      "results": {
+        "with_skill": {
+          "pass_rate": 1.0,
+          "passed": 6,
+          "total": 6,
+          "duration_seconds": 126.8,
+          "total_tokens": 22985
+        },
+        "without_skill": {
+          "pass_rate": 1.0,
+          "passed": 1,
+          "total": 1,
+          "duration_seconds": 47.4,
+          "total_tokens": 16337
+        }
+      }
+    },
+    {
+      "eval_name": "tech-vocabulary-extraction",
+      "eval_id": 2,
+      "results": {
+        "with_skill": {
+          "pass_rate": 0.5,
+          "passed": 3,
+          "total": 6,
+          "duration_seconds": 192.8,
+          "total_tokens": 22675
+        },
+        "without_skill": {
+          "pass_rate": 1.0,
+          "passed": 1,
+          "total": 1,
+          "duration_seconds": 107.0,
+          "total_tokens": 20292
+        }
+      }
+    },
+    {
+      "eval_name": "email-translation-with-learning",
+      "eval_id": 3,
+      "results": {
+        "with_skill": {
+          "pass_rate": 1.0,
+          "passed": 7,
+          "total": 7,
+          "duration_seconds": 230.9,
+          "total_tokens": 30961
+        },
+        "without_skill": {
+          "pass_rate": 1.0,
+          "passed": 1,
+          "total": 1,
+          "duration_seconds": 52.4,
+          "total_tokens": 16326
+        }
+      }
+    }
+  ],
+  "delta": {
+    "pass_rate": -0.17,
+    "duration_seconds": 114.6,
+    "total_tokens": 7888
+  },
+  "analysis": {
+    "key_findings": [
+      "With skill creates comprehensive learning materials (vocabulary.md, expressions.md, daily/meeting logs) while baseline only provides basic translation/script",
+      "Eval-2 shows 50% pass rate for with_skill due to incorrect folder structure - created files in English/ root instead of English/daily/",
+      "With skill takes significantly longer (avg 183s vs 69s) and uses more tokens (avg 25.5k vs 17.7k) but produces much richer learning resources",
+      "All three test cases with skill successfully created the primary output, but eval-2 failed to follow the exact folder structure specified in the skill"
+    ],
+    "recommendations": [
+      "Fix the skill instructions to be clearer about folder structure requirements (daily/ vs root English/)",
+      "Consider whether the extra time/tokens are justified by the added learning value",
+      "The baseline comparison is somewhat unfair since baseline doesn't attempt to create learning materials at all"
+    ]
+  }
+}

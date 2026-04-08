@@ -1,0 +1,101 @@
+SENTENCE PATTERNS FOR TECH WRITING
+===================================
+
+PATTERN 1: "X allows us to Y by Z"
+----------------------------------
+Template: [Strategy] allows us to [benefit] by [method]
+
+Examples:
+1. The incremental rollout strategy allows us to mitigate risks by gradually exposing new features to a subset of users.
+2. Feature flags allow us to control releases by enabling or disabling functionality without deploying new code.
+3. A/B testing allows us to optimize user experience by comparing different versions with real users.
+
+Your practice:
+1. ________________ allows us to ________________ by ________________.
+2. ________________ allows us to ________________ by ________________.
+
+
+PATTERN 2: "By doing X, we can Y"
+---------------------------------
+Template: By [method], we can [benefit]
+
+Examples:
+1. By implementing a phased deployment, we can minimize the impact of potential bugs.
+2. By gradually rolling out features, we can gather valuable user feedback.
+3. By monitoring metrics during each phase, we can identify performance issues early.
+
+Your practice:
+1. By ________________, we can ________________.
+2. By ________________, we can ________________.
+
+
+PATTERN 3: "X enables us to Y while Z"
+--------------------------------------
+Template: [Strategy] enables us to [action] while [constraint/benefit]
+
+Examples:
+1. Incremental rollout enables us to release new features while maintaining system stability.
+2. Staged deployment enables us to iterate quickly while minimizing risks.
+3. Feature toggles enable us to deploy code while keeping features hidden until ready.
+
+Your practice:
+1. ________________ enables us to ________________ while ________________.
+2. ________________ enables us to ________________ while ________________.
+
+
+PATTERN 4: "Before X, we Y"
+---------------------------
+Template: Before [final action], we [preparatory action]
+
+Examples:
+1. Before full deployment, we test the feature with a subset of users.
+2. Before releasing to production, we conduct thorough testing in staging environments.
+3. Before expanding to all regions, we monitor performance metrics from the initial rollout.
+
+Your practice:
+1. Before ________________, we ________________.
+2. Before ________________, we ________________.
+
+
+PATTERN 5: "X involves Y"
+-------------------------
+Template: [Strategy] involves [steps/components]
+
+Examples:
+1. Incremental rollout involves gradually increasing the percentage of users who receive the new feature.
+2. Canary deployment involves releasing updates to a small subset of servers before the full fleet.
+3. Phased deployment involves multiple stages, each targeting a larger user base.
+
+Your practice:
+1. ________________ involves ________________.
+2. ________________ involves ________________.
+
+
+PATTERN 6: "To mitigate X, we Y"
+--------------------------------
+Template: To mitigate [risk/problem], we [solution]
+
+Examples:
+1. To mitigate deployment risks, we implement incremental rollouts.
+2. To mitigate the impact of bugs, we release features to a pilot group first.
+3. To mitigate performance issues, we gradually scale up traffic to new services.
+
+Your practice:
+1. To mitigate ________________, we ________________.
+2. To mitigate ________________, we ________________.
+
+
+ADVANCED COMBINATIONS
+---------------------
+
+1. "By [method], we can [benefit], which allows us to [further benefit]"
+   Example: By implementing canary releases, we can detect issues early, which allows us to prevent widespread outages.
+
+2. "Before [action], we [preparation] to ensure [goal]"
+   Example: Before full deployment, we validate the feature in staging to ensure production stability.
+
+3. "To [goal], we use [strategy], which involves [details]"
+   Example: To minimize deployment risks, we use incremental rollouts, which involves releasing to progressively larger user segments.
+
+4. "[Strategy] not only [benefit 1] but also [benefit 2]"
+   Example: Phased deployment not only reduces risks but also provides valuable user feedback for iterations.

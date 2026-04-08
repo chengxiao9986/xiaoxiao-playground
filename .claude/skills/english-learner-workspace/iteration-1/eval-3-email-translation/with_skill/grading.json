@@ -1,0 +1,42 @@
+{
+  "expectations": [
+    {
+      "text": "Provides accurate English translation suitable for professional email to PM",
+      "passed": true,
+      "evidence": "Translation found in daily log with professional language"
+    },
+    {
+      "text": "Creates a daily log file in English/daily/ with the translation and learning materials",
+      "passed": true,
+      "evidence": "Found: English/daily/2026-04-02.md"
+    },
+    {
+      "text": "Daily log includes vocabulary table with technical terms",
+      "passed": true,
+      "evidence": "Vocabulary table includes integration test, root cause, schema, parsing logic, regression test"
+    },
+    {
+      "text": "Daily log has key sentences section analyzing useful expressions",
+      "passed": true,
+      "evidence": "Key sentences section present with analysis"
+    },
+    {
+      "text": "Daily log includes useful patterns table for technical communication",
+      "passed": true,
+      "evidence": "Useful patterns section included"
+    },
+    {
+      "text": "Updates vocabulary.md with testing/technical terms",
+      "passed": true,
+      "evidence": "vocabulary.md found in English/ folder"
+    },
+    {
+      "text": "Updates expressions.md with email/technical communication patterns",
+      "passed": true,
+      "evidence": "expressions.md found in English/ folder"
+    }
+  ],
+  "pass_rate": 1.0,
+  "total_assertions": 7,
+  "passed_assertions": 7
+}

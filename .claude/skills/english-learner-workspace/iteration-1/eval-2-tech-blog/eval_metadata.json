@@ -1,0 +1,31 @@
+{
+  "eval_id": 2,
+  "eval_name": "tech-vocabulary-extraction",
+  "prompt": "我在看一篇tech blog，里面有个句子不太明白：'The incremental rollout strategy allows us to mitigate risks by gradually exposing new features to a subset of users before full deployment.' 这个incremental rollout是什么意思？这种表达方式我以后也想用，帮我整理一下相关的vocabulary和sentence patterns。",
+  "assertions": [
+    {
+      "name": "creates_daily_log",
+      "description": "Creates a daily log file in English/daily/ with today's date"
+    },
+    {
+      "name": "explains_incremental_rollout",
+      "description": "Provides clear explanation of 'incremental rollout' in Chinese"
+    },
+    {
+      "name": "includes_vocabulary_table",
+      "description": "Daily log has a vocabulary table with key terms (incremental, rollout, mitigate, deployment, etc.) including pronunciations and meanings"
+    },
+    {
+      "name": "extracts_sentence_patterns",
+      "description": "Identifies and documents reusable sentence patterns from the original sentence (e.g., 'allows us to X by Y-ing', 'before doing X')"
+    },
+    {
+      "name": "updates_vocabulary_md",
+      "description": "Updates vocabulary.md with the new technical terms under appropriate category"
+    },
+    {
+      "name": "updates_expressions_md",
+      "description": "Updates expressions.md with the extracted sentence patterns"
+    }
+  ]
+}

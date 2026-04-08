@@ -1,0 +1,1 @@
+Due to recent API adjustments, we discovered that several test cases in our integration tests are failing. We have identified the root cause: the response schema has changed, and our parsing logic does not handle the new fields. We will fix this issue by this Friday and rerun all regression tests to ensure there are no other problems.

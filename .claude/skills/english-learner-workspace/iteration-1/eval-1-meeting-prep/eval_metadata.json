@@ -1,0 +1,31 @@
+{
+  "eval_id": 1,
+  "eval_name": "meeting-preparation",
+  "prompt": "我明天要在weekly sync上汇报我们的AI agent项目进展。我需要说：我们这周完成了基础架构的搭建，目前正在做prompt engineering优化，下周计划开始做user testing。KPI方面，我们的response accuracy从65%提升到了82%，average response time降低了40%。帮我准备一下英文汇报稿，要听起来professional但不要太formal，像正常开会那样说话就行。",
+  "assertions": [
+    {
+      "name": "creates_meeting_file",
+      "description": "Creates a meeting preparation file in English/meeting/ folder with date and topic in filename"
+    },
+    {
+      "name": "includes_speaking_script",
+      "description": "Meeting file contains a complete speaking script section with conversational English"
+    },
+    {
+      "name": "includes_learning_notes",
+      "description": "Meeting file has a Learning Notes section with vocabulary and expressions"
+    },
+    {
+      "name": "updates_vocabulary_md",
+      "description": "Creates or updates vocabulary.md with new technical/meeting terms"
+    },
+    {
+      "name": "updates_expressions_md",
+      "description": "Creates or updates expressions.md with meeting expression patterns"
+    },
+    {
+      "name": "covers_all_content",
+      "description": "Speaking script covers all required points: foundation architecture, prompt engineering, user testing plan, and both KPI metrics"
+    }
+  ]
+}

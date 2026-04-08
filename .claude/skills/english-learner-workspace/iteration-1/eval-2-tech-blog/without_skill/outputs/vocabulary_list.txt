@@ -1,0 +1,81 @@
+INCREMENTAL ROLLOUT - VOCABULARY LIST
+=====================================
+
+CORE TERMS
+----------
+incremental (adj) - 增量的、渐进的
+rollout (n) - 推出、发布
+deployment (n) - 部署
+mitigate (v) - 缓解、减轻
+gradually (adv) - 逐步地
+expose (v) - 暴露、展示
+subset (n) - 子集
+feature (n) - 功能、特性
+
+DEPLOYMENT STRATEGIES
+---------------------
+incremental rollout - 增量发布
+phased deployment - 分阶段部署
+gradual release - 逐步发布
+staged rollout - 分阶段推出
+canary release - 金丝雀发布
+blue-green deployment - 蓝绿部署
+rolling update - 滚动更新
+feature flag/toggle - 特性开关
+A/B testing - A/B测试
+continuous deployment - 持续部署
+
+RISK MANAGEMENT
+---------------
+mitigate risks - 降低风险
+minimize exposure - 减少影响范围
+risk mitigation - 风险缓解
+fallback mechanism - 回退机制
+rollback strategy - 回滚策略
+safety net - 安全网
+contingency plan - 应急计划
+risk assessment - 风险评估
+
+USER GROUPS
+-----------
+subset of users - 用户子集
+user cohort - 用户群组
+target audience - 目标受众
+early adopters - 早期采用者
+beta testers - 测试用户
+pilot group - 试点小组
+user segment - 用户细分
+
+DEPLOYMENT PHASES
+-----------------
+initial phase - 初始阶段
+pilot phase - 试点阶段
+expansion phase - 扩展阶段
+full deployment - 全面部署
+production environment - 生产环境
+staging environment - 预发布环境
+development environment - 开发环境
+
+ACTION VERBS
+------------
+deploy - 部署
+release - 发布
+rollout - 推出
+expose - 暴露
+mitigate - 缓解
+monitor - 监控
+validate - 验证
+scale - 扩展
+iterate - 迭代
+implement - 实施
+
+USEFUL ADJECTIVES
+-----------------
+incremental - 增量的
+gradual - 逐步的
+phased - 分阶段的
+staged - 分期的
+controlled - 受控的
+automated - 自动化的
+continuous - 持续的
+safe - 安全的

@@ -1,0 +1,48 @@
+{
+  "skill_name": "english-learner",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我明天要在weekly sync上汇报我们的AI agent项目进展。我需要说：我们这周完成了基础架构的搭建，目前正在做prompt engineering优化，下周计划开始做user testing。KPI方面，我们的response accuracy从65%提升到了82%，average response time降低了40%。帮我准备一下英文汇报稿，要听起来professional但不要太formal，像正常开会那样说话就行。",
+      "expected_output": "Should create a meeting preparation file (English/meeting/YYYY-MM-DD-weekly-sync.md) with: (1) PPT slide structure, (2) Natural speaking script in conversational English, (3) Learning Notes section with vocabulary like 'infrastructure', 'prompt engineering', 'accuracy', 'metrics', (4) Updates to vocabulary.md and expressions.md with new technical terms and meeting expressions",
+      "files": [],
+      "assertions": [
+        {"name": "creates_meeting_file", "description": "Creates a meeting preparation file in English/meeting/ folder with date and topic in filename"},
+        {"name": "includes_speaking_script", "description": "Meeting file contains a complete speaking script section with conversational English"},
+        {"name": "includes_learning_notes", "description": "Meeting file has a Learning Notes section with vocabulary and expressions"},
+        {"name": "updates_vocabulary_md", "description": "Creates or updates vocabulary.md with new technical/meeting terms"},
+        {"name": "updates_expressions_md", "description": "Creates or updates expressions.md with meeting expression patterns"},
+        {"name": "covers_all_content", "description": "Speaking script covers all required points: foundation architecture, prompt engineering, user testing plan, and both KPI metrics"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "我在看一篇tech blog，里面有个句子不太明白：'The incremental rollout strategy allows us to mitigate risks by gradually exposing new features to a subset of users before full deployment.' 这个incremental rollout是什么意思？这种表达方式我以后也想用，帮我整理一下相关的vocabulary和sentence patterns。",
+      "expected_output": "Should create a daily log file (English/daily/YYYY-MM-DD.md) with: (1) New words table including 'incremental', 'rollout', 'mitigate', 'deployment' with pronunciations and meanings, (2) Key sentences section analyzing the grammar structure 'allows us to X by Y-ing', (3) Useful patterns table showing the 'before doing X' pattern, (4) Updates to vocabulary.md under #technical category and expressions.md with the pattern",
+      "files": [],
+      "assertions": [
+        {"name": "creates_daily_log", "description": "Creates a daily log file in English/daily/ with today's date"},
+        {"name": "explains_incremental_rollout", "description": "Provides clear explanation of 'incremental rollout' in Chinese"},
+        {"name": "includes_vocabulary_table", "description": "Daily log has a vocabulary table with key terms (incremental, rollout, mitigate, deployment, etc.) including pronunciations and meanings"},
+        {"name": "extracts_sentence_patterns", "description": "Identifies and documents reusable sentence patterns from the original sentence (e.g., 'allows us to X by Y-ing', 'before doing X')"},
+        {"name": "updates_vocabulary_md", "description": "Updates vocabulary.md with the new technical terms under appropriate category"},
+        {"name": "updates_expressions_md", "description": "Updates expressions.md with the extracted sentence patterns"}
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "translate this for my email to the PM: 由于最近的API调整，我们发现之前的integration test有几个case会fail。我们已经identify了root cause，是因为response schema变了，我们的parsing logic没有handle新的field。我们会在这周五之前fix这个issue，然后重新run所有的regression tests确保没有其他问题。",
+      "expected_output": "Should create a daily log file with: (1) Translation of the paragraph, (2) New words like 'integration', 'root cause', 'schema', 'parsing', 'regression' in vocabulary table, (3) Key sentences showing useful expressions like 'due to recent changes', 'we've identified', 'handle the new field', 'ensure there are no other issues', (4) Useful patterns for technical communication, (5) Updates to vocabulary.md and expressions.md",
+      "files": [],
+      "assertions": [
+        {"name": "provides_translation", "description": "Provides accurate English translation suitable for professional email to PM"},
+        {"name": "creates_daily_log", "description": "Creates a daily log file in English/daily/ with the translation and learning materials"},
+        {"name": "includes_technical_vocabulary", "description": "Daily log includes vocabulary table with technical terms (integration test, root cause, schema, parsing logic, regression test, etc.)"},
+        {"name": "includes_key_sentences", "description": "Daily log has key sentences section analyzing useful expressions from the translation"},
+        {"name": "includes_patterns", "description": "Daily log includes useful patterns table for technical communication (e.g., 'due to recent changes', 'we've identified', 'ensure there are no')"},
+        {"name": "updates_vocabulary_md", "description": "Updates vocabulary.md with testing/technical terms"},
+        {"name": "updates_expressions_md", "description": "Updates expressions.md with email/technical communication patterns"}
+      ]
+    }
+  ]
+}

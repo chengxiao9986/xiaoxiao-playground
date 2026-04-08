@@ -1,0 +1,37 @@
+{
+  "expectations": [
+    {
+      "text": "Creates a meeting preparation file in English/meeting/ folder with date and topic in filename",
+      "passed": true,
+      "evidence": "Found: English/meeting/2026-04-03-weekly-sync.md"
+    },
+    {
+      "text": "Meeting file contains a complete speaking script section with conversational English",
+      "passed": true,
+      "evidence": "Speaking Script section present with natural conversational English"
+    },
+    {
+      "text": "Meeting file has a Learning Notes section with vocabulary and expressions",
+      "passed": true,
+      "evidence": "Learning Notes section found with vocabulary table and key expressions"
+    },
+    {
+      "text": "Creates or updates vocabulary.md with new technical/meeting terms",
+      "passed": true,
+      "evidence": "vocabulary.md found in English/ folder"
+    },
+    {
+      "text": "Creates or updates expressions.md with meeting expression patterns",
+      "passed": true,
+      "evidence": "expressions.md found in English/ folder"
+    },
+    {
+      "text": "Speaking script covers all required points: foundation architecture, prompt engineering, user testing plan, and both KPI metrics",
+      "passed": true,
+      "evidence": "All points covered: foundational architecture, prompt engineering optimization, user testing kickoff, accuracy 65%→82%, response time reduced by 40%"
+    }
+  ],
+  "pass_rate": 1.0,
+  "total_assertions": 6,
+  "passed_assertions": 6
+}

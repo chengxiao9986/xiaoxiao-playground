@@ -1,0 +1,35 @@
+{
+  "eval_id": 3,
+  "eval_name": "email-translation-with-learning",
+  "prompt": "translate this for my email to the PM: 由于最近的API调整，我们发现之前的integration test有几个case会fail。我们已经identify了root cause，是因为response schema变了，我们的parsing logic没有handle新的field。我们会在这周五之前fix这个issue，然后重新run所有的regression tests确保没有其他问题。",
+  "assertions": [
+    {
+      "name": "provides_translation",
+      "description": "Provides accurate English translation suitable for professional email to PM"
+    },
+    {
+      "name": "creates_daily_log",
+      "description": "Creates a daily log file in English/daily/ with the translation and learning materials"
+    },
+    {
+      "name": "includes_technical_vocabulary",
+      "description": "Daily log includes vocabulary table with technical terms (integration test, root cause, schema, parsing logic, regression test, etc.)"
+    },
+    {
+      "name": "includes_key_sentences",
+      "description": "Daily log has key sentences section analyzing useful expressions from the translation"
+    },
+    {
+      "name": "includes_patterns",
+      "description": "Daily log includes useful patterns table for technical communication (e.g., 'due to recent changes', 'we've identified', 'ensure there are no')"
+    },
+    {
+      "name": "updates_vocabulary_md",
+      "description": "Updates vocabulary.md with testing/technical terms"
+    },
+    {
+      "name": "updates_expressions_md",
+      "description": "Updates expressions.md with email/technical communication patterns"
+    }
+  ]
+}
