@@ -1,0 +1,18 @@
+# Claude Code
+.claude/
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment variables
+.env
+.env.local
