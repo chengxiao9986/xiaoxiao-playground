@@ -9,7 +9,7 @@
 ## 前置条件
 
 - 已部署 OpenClaw gateway（参考 [clawdbot-饼饼.md](clawdbot-饼饼.md)）
-- Azure VM: openclaw-vm (52.154.177.15)
+- Azure VM: openclaw-vm (20.172.149.137)
 - SSH 访问权限
 
 ---
@@ -54,7 +54,7 @@
 ### SSH 连接到 VM
 
 ```bash
-ssh azureuser@52.154.177.15
+ssh azureuser@20.172.149.137
 ```
 
 ### 编辑 OpenClaw 配置文件
@@ -161,7 +161,7 @@ journalctl --user -u openclaw-gateway -f
 ### SSH 到 VM
 
 ```bash
-ssh azureuser@52.154.177.15
+ssh azureuser@20.172.149.137
 ```
 
 ### 实时内存监控
@@ -310,4 +310,4 @@ journalctl --user -u openclaw-gateway | grep -i error
 
 **文档创建日期**: 2026-04-02  
 **最后更新**: 2026-04-02  
-**维护人员**: xiaoxch
+**维护人员**: xiaoxiao

@@ -12,7 +12,7 @@
 - **VM 名称**: openclaw-vm
 - **资源组**: CLAWDBOT-RG
 - **区域**: East US
-- **公网 IP**: 52.154.177.15
+- **公网 IP**: 20.172.149.137
 - **操作系统**: Linux (Ubuntu)
 
 ### 硬件规格 (Standard_B2s)
@@ -31,13 +31,13 @@
 
 ### SSH 访问
 ```bash
-ssh azureuser@52.154.177.15
+ssh azureuser@20.172.149.137
 
 从你的本地电脑远程登录到 Azure VM, 作用：
 
 ssh = Secure Shell，安全远程连接协议
 azureuser = VM 上的用户名
-52.154.177.15 = VM 的公网 IP 地址
+20.172.149.137 = VM 的公网 IP 地址
 执行后：
 
 会提示输入密码（如果用密码认证）或使用 SSH 密钥
@@ -143,7 +143,7 @@ openclaw daemon restart
 5. 将 Bot 添加到目标 Discord 服务器
 
 ### 4. OpenClaw 集成 Discord
-1. SSH 到 VM: `ssh azureuser@52.154.177.15`
+1. SSH 到 VM: `ssh azureuser@20.172.149.137`
 2. 配置 Discord token
 3. 重启 OpenClaw gateway
 4. 在 Discord 中测试 bot 响应
@@ -192,7 +192,7 @@ openclaw daemon restart
 ### 监控
 **SSH 到 VM**:
 ```bash
-ssh azureuser@52.154.177.15
+ssh azureuser@20.172.149.137
 ```
 
 **实时监控内存**:
@@ -234,4 +234,4 @@ sudo swapon /swapfile
 
 **文档创建日期**: 2026-04-02  
 **最后更新**: 2026-04-02  
-**维护人员**: xiaoxch
+**维护人员**: xiaoxiao
